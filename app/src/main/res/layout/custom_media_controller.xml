@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#80000000"
+    android:padding="8dp">
+
+    <!-- Play Button -->
+    <ImageButton
+        android:id="@+id/exo_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_media_play" />
+
+    <!-- Pause Button -->
+    <ImageButton
+        android:id="@+id/exo_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/exo_play"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_media_pause"
+        android:visibility="gone" />
+
+    <!-- Progress SeekBar -->
+    <SeekBar
+        android:id="@+id/exo_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/exo_pause"
+        android:layout_toStartOf="@id/fullscreen_toggle"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1" />
+
+    <!-- Fullscreen Toggle Button -->
+    <ImageButton
+        android:id="@+id/fullscreen_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_fullscreen_24" />
+
+    <!-- Volume Button -->
+    <ImageButton
+        android:id="@+id/volume_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/fullscreen_toggle"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_lock_silent_mode" />
+
+    <!-- Volume SeekBar -->
+    <SeekBar
+        android:id="@+id/volume_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/volume_button"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:max="100" />
+
+</RelativeLayout>

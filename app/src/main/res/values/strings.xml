@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FYP</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="welcome_to_olympic_sport_games_video_app">Welcome to Olympic Sport Games Video App!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="shorts">Shorts</string>
+    <string name="profile">Profile</string>
+    <string name="no_title">No Title</string>
+    <string name="no_description">No Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="shorts_fragment">Shorts Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="username">Username</string>
+    <string name="history">History</string>
+    <string name="saved_video">Saved Video</string>
+    <string name="liked_video">Liked Video</string>
+    <string name="logout">Logout</string>
+</resources>

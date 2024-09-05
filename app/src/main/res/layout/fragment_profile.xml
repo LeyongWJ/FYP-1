@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="Profile"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:id="@+id/user_profile_image"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/user_profile_image"
+            android:textColor="#212121"
+            android:layout_marginStart="10dp"
+            android:id="@+id/user_profile_name" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_below="@id/user_profile_name"
+            android:layout_toEndOf="@id/user_profile_image"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view" />
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:theme="@style/Widget.Design.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/txt_history"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/baseline_history_24"
+            android:drawableTint="#202020"
+            android:drawablePadding="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/txt_saved_video"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saved_video"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/baseline_save_alt_24"
+            android:drawableTint="#202020"
+            android:drawablePadding="12dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/txt_liked_video"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/liked_video"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/liked_video"
+            android:drawableTint="#202020"
+            android:drawablePadding="12dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
